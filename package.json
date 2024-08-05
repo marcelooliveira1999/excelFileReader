@@ -8,8 +8,9 @@
     "node": "v22.5.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node --watch --no-warnings ./src/app.js"
+    "dev:app": "node --watch --no-warnings ./src/app.js",
+    "dev:queues": "node --watch --no-warnings ./src/queues.js",
+    "dev": "npm run dev:app & npm run dev:queues"
   },
   "keywords": [],
   "author": "Marcelo Oliveira",
